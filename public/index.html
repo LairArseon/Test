@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A visual introduction to the operational advantages of Business Central." />
+    <title>One Clear View | Business Central</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="One Clear View home">OCV<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation">
+        <i data-lucide="menu" aria-hidden="true"></i>
+      </button>
+      <nav id="site-navigation" class="site-navigation" aria-label="Primary navigation">
+        <a href="#advantages">Advantages</a>
+        <a href="#connected">Connected work</a>
+        <a href="#outcomes">Outcomes</a>
+      </nav>
+      <a class="header-link" href="#explore">Explore the platform <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> BUSINESS CENTRAL, EXPLAINED</p>
+          <h1 id="hero-title">Your business,<br /><em>in clear view.</em></h1>
+          <p class="hero-intro">Bring finance, sales, service and operations into one adaptable system, so teams spend less time reconciling work and more time moving it forward.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#advantages">See the advantages <i data-lucide="arrow-down-right" aria-hidden="true"></i></a>
+            <a class="text-link" href="#connected">How it connects <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="A business operator viewing inventory information">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=85" alt="A business owner reviewing operational information in a retail space" />
+          <div class="visual-label label-top"><span class="pulse"></span> LIVE OPERATIONS</div>
+          <div class="visual-label label-bottom">ONE SOURCE / MANY DECISIONS</div>
+          <div class="visual-grid" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="signal-strip" aria-label="Business Central advantages">
+        <p>ONE CONNECTED BUSINESS SYSTEM</p><i data-lucide="plus" aria-hidden="true"></i>
+        <p>DECISIONS WITH CONTEXT</p><i data-lucide="plus" aria-hidden="true"></i>
+        <p>ROOM TO GROW</p>
+      </section>
+
+      <section id="advantages" class="advantages section-shell" aria-labelledby="advantages-title">
+        <div class="section-heading">
+          <p class="eyebrow"><span></span> THE PRACTICAL ADVANTAGE</p>
+          <h2 id="advantages-title">Less searching.<br /><em>More knowing.</em></h2>
+        </div>
+        <div class="advantages-intro">
+          <p>Business Central brings the signals your team needs into the flow of daily work, creating a steadier rhythm from first order to final report.</p>
+          <a class="text-link" href="#connected">See the connected view <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="advantage-grid">
+          <article class="advantage-card card-coral">
+            <div class="card-index">01</div>
+            <i data-lucide="landmark" aria-hidden="true"></i>
+            <h3>Finance that stays close to the work</h3>
+            <p>See the financial effect of operations while there is still time to act, not only after month-end.</p>
+          </article>
+          <article class="advantage-card card-blue">
+            <div class="card-index">02</div>
+            <i data-lucide="boxes" aria-hidden="true"></i>
+            <h3>Inventory with a point of view</h3>
+            <p>Balance availability, purchasing and fulfillment with a shared picture of what is moving and what is not.</p>
+          </article>
+          <article class="advantage-card card-lime">
+            <div class="card-index">03</div>
+            <i data-lucide="waypoints" aria-hidden="true"></i>
+            <h3>Teams working from the same signal</h3>
+            <p>Give sales, service and operations context they can use without stitching together separate systems.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="connected" class="connected" aria-labelledby="connected-title">
+        <div class="connected-copy section-shell">
+          <p class="eyebrow"><span></span> A CONNECTED WORKDAY</p>
+          <h2 id="connected-title">One change,<br /><em>felt everywhere.</em></h2>
+          <p>A new order should inform the warehouse, update financial expectations and give customer teams a better answer. Choose a signal to follow through the business.</p>
+          <div class="signal-controls" role="tablist" aria-label="Business signals">
+            <button class="signal-button is-active" type="button" role="tab" aria-selected="true" aria-controls="signal-detail" data-signal="order">New order</button>
+            <button class="signal-button" type="button" role="tab" aria-selected="false" aria-controls="signal-detail" data-signal="stock">Low stock</button>
+            <button class="signal-button" type="button" role="tab" aria-selected="false" aria-controls="signal-detail" data-signal="margin">Margin shift</button>
+          </div>
+        </div>
+        <div class="dashboard-wrap">
+          <div class="dashboard" id="signal-detail" role="tabpanel" tabindex="0">
+            <div class="dashboard-bar"><span class="dashboard-mark">bc</span><span>Operations overview</span><i data-lucide="more-horizontal" aria-hidden="true"></i></div>
+            <div class="dashboard-content">
+              <div class="dashboard-main">
+                <div class="metric-row"><div><span class="metric-label">Expected this week</span><strong id="metric-value">$48,260</strong><small id="metric-change">+12.4% vs last week</small></div><div class="mini-chart" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+                <div class="order-card"><div class="order-icon"><i data-lucide="shopping-bag" aria-hidden="true"></i></div><div><span class="metric-label" id="detail-kicker">NEW ORDER</span><strong id="detail-title">Northwind Traders</strong><small id="detail-copy">Order SO-1087 is ready for fulfillment.</small></div><i data-lucide="arrow-up-right" aria-hidden="true"></i></div>
+              </div>
+              <aside class="dashboard-side"><span class="metric-label">IN MOTION</span><div class="side-stat"><strong id="side-value">14</strong><span id="side-label">orders awaiting pick</span></div><div class="progress-track"><span id="progress-bar"></span></div><small id="side-note">Warehouse queue updated now</small></aside>
+            </div>
+            <div class="dashboard-footer"><span><i data-lucide="check" aria-hidden="true"></i> Finance forecast refreshed</span><span><i data-lucide="check" aria-hidden="true"></i> Customer record informed</span></div>
+          </div>
+          <p class="dashboard-caption">A single operational signal travels with the context needed for the next decision.</p>
+        </div>
+      </section>
+
+      <section id="outcomes" class="outcomes section-shell" aria-labelledby="outcomes-title">
+        <div class="outcomes-lead"><p class="eyebrow"><span></span> WHAT THIS ENABLES</p><h2 id="outcomes-title">Built for the<br /><em>next right move.</em></h2></div>
+        <div class="outcome-list">
+          <article><span>01</span><div><h3>Adapt without starting over</h3><p>Configure processes for how your teams work today, then extend thoughtfully as the business changes.</p></div><i data-lucide="move-up-right" aria-hidden="true"></i></article>
+          <article><span>02</span><div><h3>Turn visibility into confidence</h3><p>Bring timely operational and financial context into the decisions that set pace and direction.</p></div><i data-lucide="move-up-right" aria-hidden="true"></i></article>
+          <article><span>03</span><div><h3>Grow with fewer handoffs</h3><p>Give more people a dependable shared foundation as locations, product lines and responsibilities expand.</p></div><i data-lucide="move-up-right" aria-hidden="true"></i></article>
+        </div>
+      </section>
+
+      <section id="explore" class="closing section-shell" aria-labelledby="closing-title">
+        <p class="eyebrow"><span></span> SEE THE WHOLE PICTURE</p>
+        <h2 id="closing-title">A clearer business<br />starts with a <em>connected one.</em></h2>
+        <a class="button button-light" href="#top">Back to the overview <i data-lucide="arrow-up" aria-hidden="true"></i></a>
+      </section>
+    </main>
+
+    <footer><a class="wordmark" href="#top">OCV<span>.</span></a><p>Independent Business Central overview. Not affiliated with or endorsed by Microsoft.</p><p>2026</p></footer>
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "business-central-overview",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A visual overview of Business Central advantages.",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
